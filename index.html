@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo web & diseño</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/6cf3a53522.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6cf3a53522.js" 
+        crossorigin="anonymous"></script>
+
+    <script src="/contacto.js"></script>
 
 </head>
 
@@ -218,7 +221,6 @@
             </div>
         </section>
 
-
         <!-- SECCION PRECIOS -->
         <div class="fondo">
             <section class="contenedor">
@@ -295,6 +297,71 @@
 
             </section>
         </div>
+
+        <!-- SECCION CONTACTO -->
+        <Section>
+        <div class="contain-padre">
+            <div class="container-contacto">
+              <div class="contacts">
+                <h1>Nuestro Contacto</h1>
+                <h2>Ingrese sus datos y en menos de 24 horas un consultor especializado le responderá.</h2>
+                <br>
+                <h2>O si lo prefiere escríbanos a: contacto@desarrolloweb.com</h2>
+              </div>
+              <div class="formulario">
+                <!-- <form action="" name="fvalida" method="get"> -->
+                <form id="contactform" action="https://formsubmit.io/send/00a84b80-52f0-4f83-a725-95cb9ce639d1" method="POST" name="fvalida">
+                 <input name="_redirect" type="hidden" id="names" value="http://127.0.0.1:5500/index.html"> 
+                  <h2>Envíanos un Mensaje</h2>
+                    <p class="full-width">
+                        <label for="servicios">Seleccione el servicio a consultar: </label>
+                        <select name="servicio" id="servicio">
+                            <option name="so" value="Seleccione">Seleccione</option>
+                            <option name="so" value="Desarrollo Web">Desarrollo Web</option>
+                            <option name="so" value="E-Commerce">E-Commerce</option>
+                            <option name="so"  value="Mantenimiento">Mantenimiento</option>
+                            <option name="so" value="Diseño Gráfico">Diseño Gráfico</option>
+                            <option name="so" value="Posicionamiento SEO">Posicionamiento SEO</option>
+                            <option name="so" value="Alojamiento Web">Alojamiento Web</option>
+                        </select>
+                    </p>
+                  <p>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" required>
+                  </p>
+                  <p>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" required>
+                  </p>
+                  <p>
+                    <label for="telefono">Teléfono: </label>
+                    <input type="number" name="telefono" id="telefono" required>
+                  </p>
+                  <p>
+                    <label for="mail">Mail: </label>
+                    <input type="email" name="email" id="email" required>
+                  </p>
+                  <p>
+                    <label for="empresa">Empresa: </label>
+                    <input type="text" name="empresa" id="empresa">
+                  </p>
+                  <p>
+                    <label for="pais">Pais: </label>
+                    <input type="text" name="pais" id="pais">
+                  </p>
+                  <p class="full-width">
+                    <label for="comentarios">Mensaje:
+                    <textarea name="comment" id="comment" cols="30" rows="7"></textarea>
+                  </p>
+                  <input name="_formsubmit_id" type="text" style="display:none">
+                  <p>
+                    <button type="button" id="b1" value="Enviar" onclick="validarEnviar()">Enviar</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </Section> 
     </main>
 
     <footer class="contenedor mockup">
@@ -353,6 +420,6 @@
             <span>All rights reserved © 2009 - 2023 </span>
         </div>
     </footer>
+    <script src="js/contacto.js"></script>
 </body>
-
 </html>
