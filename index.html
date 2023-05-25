@@ -18,23 +18,22 @@
                 <a href="" class="marca">
                     <!-- <img  src="img/prueba_logotipo.png" alt="isologotipo" width="100%" height="100%">  -->
                 </a>
-                <nav class="navegacion mockup">
-                    <a class="mockup" href="">nosotros</a>
-                    <a class="mockup" href="">servicios</a>
-                    <a class="mockup" href="">trabajos</a>
-                    <a class="mockup" href="">precios</a>
-                    <a class="mockup" href="">contacto</a>
+                <nav class="navegacion">
+                    <a class="mockup" href="#nosotros">nosotros</a>
+                    <a class="mockup" href="#servicios">servicios</a>
+                    <a class="mockup" href="#trabajos">trabajos</a>
+                    <a class="mockup" href="#precios">precios</a>
+                    <a class="mockup" href="#contacto">contacto</a>
                 </nav>
             </div>
         </div>
-
 
     </header>
 
     <main>
 
         <!-- SECCION NOSOTROS -->
-        <section class="contenedor">
+        <section id="nosotros" class="contenedor">
             <div class="titulo-nosotros">
                 <h1>TENES ESTAS RAZONES PARA ELEGIRNOS</h1>
                 <p>
@@ -91,7 +90,7 @@
         </section>
 
         <!-- SECCION SERVICIOS -->
-        <div class="fondo">
+        <div id="servicios" class="fondo">
             <section class="contenedor">
                 <div class=" contenedor-servicios">
                     <div class="item1">
@@ -167,7 +166,7 @@
         </div>
 
         <!-- SECCION TRABAJOS -->
-        <section class="contenedor">
+        <section id="trabajos" class="contenedor">
             <div class="titulo">
                 <h1>NUESTROS ULTIMOS TRABAJOS</h1>
                 <h2>Explora Nuestro Portafolio</h2>
@@ -176,42 +175,42 @@
 
                 <div class="contenedor-imagen">
                     <a href="https://www.tresases.com.ar/">
-                        <img src="img/tresases.jpg" alt="Pagina Beer Market">
+                        <img class="imagenes" src="img/tresases.jpg" alt="Pagina Beer Market">
                         <p class="enlaces-trabajos">wwww.tresases.com.ar</p>
                     </a>
                 </div>
 
                 <div class="contenedor-imagen">
                     <a href="https://beermarket.com.ar/">
-                        <img src="img/beer.jpg" alt="Pagina Beer Market">
+                        <img class="imagenes"  src="img/beer.jpg" alt="Pagina Beer Market">
                         <p class="enlaces-trabajos">wwww.beermarket.com.ar</p>
                     </a>
                 </div>
 
                 <div class="contenedor-imagen">
                     <a href="https://hipertehuelche.com/">
-                        <img src="img/hyper.jpg" alt="Pagina Beer Market">
+                        <img class="imagenes"  src="img/hyper.jpg" alt="Pagina Beer Market">
                         <p class="enlaces-trabajos">wwww.hipertehuelche.com</p>
                     </a>
                 </div>
 
                 <div class="contenedor-imagen">
                     <a href="https://www.venex.com.ar/">
-                        <img src="img/venex.jpg" alt="Pagina Beer Market">
+                        <img class="imagenes"  src="img/venex.jpg" alt="Pagina Beer Market">
                         <p class="enlaces-trabajos">www.venex.com.ar</p>
                     </a>
                 </div>
 
                 <div class="contenedor-imagen">
                     <a href="https://www.laanonimaonline.com/">
-                        <img src="img/laanonima.jpg" alt="Pagina Beer Market">
+                        <img class="imagenes"  src="img/laanonima.jpg" alt="Pagina Beer Market">
                         <p class="enlaces-trabajos">www.laanonimaonline.com</p>
                     </a>
                 </div>
 
                 <div class="contenedor-imagen">
                     <a href="https://www.coto.com.ar/" target="_blank">
-                        <img src="img/coto.jpg"alt="Pagina Beer Market" >
+                        <img class="imagenes"  src="img/coto.jpg" alt="Pagina Beer Market">
                         <p class="enlaces-trabajos">www.coto.com.ar</p>
                     </a>
                 </div>
@@ -220,7 +219,7 @@
 
 
         <!-- SECCION PRECIOS -->
-        <div class="fondo">
+        <div id="precios" class="fondo">
             <section class="contenedor">
                 <div class="titulo-precios">
                     <h1>ESTOS SON NUESTROS PRECIOS</h1>
@@ -295,6 +294,74 @@
 
             </section>
         </div>
+        <!-- SECCION CONTACTO -->
+        <Section id="contacto" class="contenedor">
+            <div class="contenido-formulario">
+                <div class="titulo-contactos">
+                    <h1>Nuestro Contacto</h1>
+                    <p>Ingrese sus datos y en menos de 24 horas un consultor especializado le responderá o si lo
+                        prefiere escríbanos a: contacto@desarrolloweb.com</p>
+                </div>
+                <div class="formulario">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="formulario-contacto" id="contactform"
+                        action="https://formsubmit.io/send/00a84b80-52f0-4f83-a725-95cb9ce639d1" method="POST"
+                        name="fvalida">
+                        <input name="_redirect" type="hidden" id="names" value="http://127.0.0.1:5500/index.html">
+
+                        <p class="full-width">
+                            <label for="servicios">Seleccione el servicio a consultar: </label>
+                            <select name="servicio" id="servicio">
+                                <option name="so" value="Vacio"></option>
+                                <option name="so" value="1">Desarrollo Web</option>
+                                <option name="so" value="2">E-Commerce</option>
+                                <option name="so" value="3">Mantenimiento</option>
+                                <option name="so" value="4">Diseño Gráfico</option>
+                                <option name="so" value="5">Posicionamiento SEO</option>
+                                <option name="so" value="6">Alojamiento Web</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" id="nombre">
+                        </p>
+                        <p>
+                            <label for="apellido">Apellido: </label>
+                            <input type="text" name="apellido" id="apellido" required>
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono: </label>
+                            <input type="">
+                        </p>
+                        <p>
+                            <label for="correo">Mail: </label>
+                            <input type="mail" name="mail" id="mail" required>
+                        </p>
+                        <p>
+                            <label for="empresa">Empresa: </label>
+                            <input type="text">
+                        </p>
+                        <p>
+                            <label for="pais">Pais: </label>
+                            <input type="text">
+                        </p>
+
+                        <p class="full-width">
+                            <label for="comentarios">Mensaje:
+                                <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                        </p>
+
+                        
+                        <input name="_formsubmit_id" type="text" style="display:none">
+                        
+                        <div class="flex-button full-width">
+                                <button class="button" type="button" id="b1" value="Enviar" onclick="validarEnviar()">Enviar</button>
+                        </div>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </Section>
     </main>
 
     <footer class="contenedor mockup">
@@ -353,6 +420,7 @@
             <span>All rights reserved © 2009 - 2023 </span>
         </div>
     </footer>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
