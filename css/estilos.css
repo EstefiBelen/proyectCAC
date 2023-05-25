@@ -303,8 +303,6 @@ https://fontawesome.com/icons/square-instagram?f=brands&s=solid&sz=2xl
     text-align: center;
 }
 
-
-
 .iconos {
     width: 10rem;
     height: auto;
@@ -320,16 +318,21 @@ https://fontawesome.com/icons/square-instagram?f=brands&s=solid&sz=2xl
     text-align: center;
     margin: 2rem 0 5rem 0;
 }
-
-.contenedor-imagen img {
-    width: 90%;
-    height: 90%;
+.contenedor-imagen {
+    margin: 0 0 1rem 0;
+    border-radius: 2rem;
     padding: .1rem;
-    background-color: #676565;
+    background-color: rgba(211, 213, 215, 0.3);
     border-radius: .5rem;
     box-shadow: .1rem .5rem .3rem rgba(0, 0, 0, 0.2);
-}
 
+}
+.imagenes{
+    width: 85%;
+    height: 80%;
+    border-radius: 0.4rem;
+
+}
 .contenedor-portfolio {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -341,7 +344,7 @@ https://fontawesome.com/icons/square-instagram?f=brands&s=solid&sz=2xl
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem;
-        row-gap: 5rem;
+        row-gap: 3rem;
     }
 }
 
@@ -359,12 +362,14 @@ https://fontawesome.com/icons/square-instagram?f=brands&s=solid&sz=2xl
     -webkit-filter: grayscale(0%);
     transition: 1s ease;
 }
-.enlaces-trabajos{
-    text-decoration:underline;
+
+.enlaces-trabajos {
+    text-decoration: underline;
     color: #000000;
-    padding: 1.5rem 0 0 0;
+    padding: 1rem 0 0 0;
 
 }
+
 /* ---------------------------------------------------- PRECIOS */
 .titulo-precios {
     text-align: center;
@@ -418,19 +423,74 @@ h3 {
     box-shadow: .1rem .1rem .8rem .5rem #0c0c0c33;
     background-color: aliceblue;
     border-radius: 1rem;
-    padding:  2rem 5rem;
+    padding: 2rem 5rem;
     font-size: 1.8rem;
     font-weight: bold;
     margin: 3rem 0 2rem 0;
     cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
     background-color: #2373ac33;
 
 }
 
-
 .contenido-nosotros,
 .contenedor-portfolio {
     padding: 0 0 2rem 0;
+}
+
+/* --------------------------------------------------------CONTACTO */
+
+.contenido-formulario {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.titulo-contactos {
+    flex: 0 0 calc(45% - 1rem);
+    text-align: left;
+}
+
+.formulario {
+    flex: 0 0 calc(55% - 1rem);
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: var(--espacio-titulo);
+}
+
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+}
+
+form p {
+    margin: 1rem;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+.formulario input,
+textarea,
+select {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #000;
+}
+.formulario textarea{
+    height: 20rem;
+}
+
+button {
+    background: rgb(99, 92, 107);
+    width: 50%;
 }
